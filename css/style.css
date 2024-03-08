@@ -29,7 +29,9 @@ html {
 html::-webkit-scrollbar {
     width: .8rem;
 }
-
+section{
+    padding: 2rem 7%;
+}
 html::-webkit-scrollbar-track {
     background: transparent;
 }
@@ -97,6 +99,10 @@ body {
     align-items: center;
     transform: scaleX(0);
     transform-origin: top;
+}
+
+.header .search-form.active {
+    transform: scaleX(1);
 }
 
 .header .search-form input {
@@ -195,7 +201,31 @@ body {
     font-size: 1.5rem;
     border-radius: 10px;
 }
-
+/* home styles*/
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(/imgae/background.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    min-width: 60rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    color: #eee;
+}
 
 
 
@@ -228,7 +258,9 @@ body {
     #menu-btn {
         display: inline-block;
     }
-
+    section{
+        padding: 2rem;
+    }
     .header .navbar {
         position: absolute;
         top: 100%;
@@ -249,8 +281,26 @@ body {
         padding: .5rem;
         font-size: 2rem;
     }
-    .header .cart-items-container.active{
+
+    .header .cart-items-container.active {
         right: 0;
         transition: .1s;
+    }
+
+    .header .search-form {
+        width: 90%;
+        height: 3rem;
+    }
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+    .home .content h3{
+        font-size: 4.5rem;
+        
+    }
+    .home .content p{
+        font-size: 1.8rem;  
     }
 }

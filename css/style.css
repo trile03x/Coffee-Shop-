@@ -347,19 +347,13 @@ body {
 
 
 /* media queries */
-@media (max-width:991px) {
-    html {
-        font-size: 55%;
-    }
-
-    .header {
-        padding: 1.5rem 2rem;
-    }
-}
 
 @media(max-width:450px) {
     html {
-        font-style: 50%;
+        font-size: 55%;
+    }
+    .header {
+        padding: 1.5rem 2rem;
     }
 }
 
@@ -367,7 +361,9 @@ body {
     #menu-btn {
         display: inline-block;
     }
-
+    .home .content {
+        min-width: 30rem;
+    }    
     section {
         padding: 2rem;
     }
